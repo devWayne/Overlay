@@ -1,0 +1,26 @@
+{
+  "name": "cl-overlay",
+  "version": "1.0.0",
+  "description": "base overlay in mobile",
+  "main": "index.js",
+  "scripts": {
+    "bundle":"browserify test/test.js -o test/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devWayne/Overlay.git"
+  },
+  "keywords": [
+    "overlay"
+  ],
+  "author": "VI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://giIthub.com/devWayne/Overlay/issues"
+  },
+  "homepage": "https://github.com/devWayne/Overlay",
+  "dependencies": {
+    "cl-css": "^1.0.0"
+  }
+}
