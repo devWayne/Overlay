@@ -1,10 +1,19 @@
 <html>
-<head>
-  <title>Overlay</title>
-</head>
-<body>
-<button id="btn">Overlay</button>
-<script src="bundle.js"></script>
-</body>
-</html>
 
+<head>
+    <title>Overlay</title>
+</head>
+
+<body>
+    <button id="btn">Overlay</button>
+    <script src="../overlay.js"></script>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.onclick = function() {
+            var ol = new Overlay();
+        }
+    </script>
+
+</body>
+
+</html>

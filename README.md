@@ -5,11 +5,20 @@ Overlay [![Build Status](https://travis-ci.org/devWayne/Overlay.svg?branch=maste
 ##Usage
 
 ```
+var Overlay = require('cl-overlay');
 var ol = new Overlay();
-ol.show();
 
 ```
 
 ##API
 
-#### Overlay(Numer zindex)
+#### new Overlay(option)
+
+```
+option:{
+	//z-index
+	zIndex:'200',
+	//transparency of overlay
+	trans:'0.6'
+}
+````
