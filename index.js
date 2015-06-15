@@ -11,13 +11,6 @@ function Overlay(opt) {
     opt.trans = opt.trans || '0.6';
     if(document.getElementsByClassName('cl-overlay').length > 0) return;
     var ol = this.el = document.body.appendChild(createOverlay(opt.zIndex, opt.trans));
-    ol.addEventListener('touchstart touchmove touchend', function(e) {
-        e.preventDefault();
-    });
-
-    ol.addEventListener('touchstart click', function(e) {
-        this.hide();
-    }.bind(this));
     this.show();
 }
 
@@ -27,14 +20,14 @@ function Overlay(opt) {
  */
 function createOverlay(zIndex, trans) {
     var CSS = {
-        top: '0',
-        left: '0',
-        width: '100%',
-        height: '100%',
+        'top': '0',
+        'left': '0',
+        'width': '100%',
+        'height': '100%',
         'background': 'rgba(0,0,0,' + trans + ')',
         'z-index': zIndex,
-        position: 'fixed',
-        display: 'none'
+        'position': 'fixed',
+        'display': 'none'
     };
     var el = document.createElement('div');
     el.classList.add('cl-overlay');

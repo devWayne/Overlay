@@ -5,7 +5,7 @@ Overlay [![Build Status](https://travis-ci.org/devWayne/Overlay.svg?branch=maste
 ##Usage
 
 ```
-var Overlay = require('cl-overlay');
+var Overlay = require('cl-overlay').Overlay;
 var ol = new Overlay();
 
 ```
