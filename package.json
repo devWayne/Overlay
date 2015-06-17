@@ -1,6 +1,6 @@
 {
   "name": "cl-overlay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "base overlay in mobile",
   "main": "index.js",
   "scripts": {
