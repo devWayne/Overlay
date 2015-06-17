@@ -28,5 +28,6 @@ node_modules
 .DS_Store
 *.swp
 *.swo
+test/test-lib
 
 

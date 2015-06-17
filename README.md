@@ -24,3 +24,11 @@ option:{
 ````
 
 ##### overlay.remove()
+
+
+###Test
+
+```
+$ bower install
+$ npm run test
+```

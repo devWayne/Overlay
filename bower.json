@@ -1,0 +1,22 @@
+{
+  "name": "Overlay",
+  "main": "overlay.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/devWayne/Overlay",
+  "authors": [
+    "Wayne <dev.wayne.ix@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+   "chai": "*",
+   "mocha":"*"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
