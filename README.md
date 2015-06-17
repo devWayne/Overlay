@@ -22,3 +22,5 @@ option:{
 	trans:'0.6'
 }
 ````
+
+##### overlay.remove()

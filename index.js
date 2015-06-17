@@ -11,7 +11,6 @@ function Overlay(opt) {
     opt.trans = opt.trans || '0.6';
     if(document.getElementsByClassName('cl-overlay').length > 0) return;
     var ol = this.el = document.body.appendChild(createOverlay(opt.zIndex, opt.trans));
-    this.show();
 }
 
 /**
@@ -26,8 +25,7 @@ function createOverlay(zIndex, trans) {
         'height': '100%',
         'background': 'rgba(0,0,0,' + trans + ')',
         'z-index': zIndex,
-        'position': 'fixed',
-        'display': 'none'
+        'position': 'fixed'
     };
     var el = document.createElement('div');
     el.classList.add('cl-overlay');
@@ -35,23 +33,11 @@ function createOverlay(zIndex, trans) {
     return el;
 };
 
-
 /**
  * @return {void} description
  */
-Overlay.prototype.show = function() {
-    Css(this.el, {
-        display: 'block'
-    });
-};
-
-/**
- * @return {void} description
- */
-Overlay.prototype.hide = function() {
-    Css(this.el, {
-        display: 'none'
-    });
+Overlay.prototype.remove = function() {
+    document.body.removeChild(this.el)
 };
 
 module.exports = {
