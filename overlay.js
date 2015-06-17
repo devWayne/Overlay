@@ -54,7 +54,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Css = __webpack_require__(1);
+	var Css = __webpack_require__(1).Css;
 
 	/**
 	 * Constrcutor
@@ -164,7 +164,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	}
 
-	true ? module.exports = Css : this[Css] = Css;
+	module.exports = {
+	    Css: Css
+	}
 
 
 /***/ }
